@@ -1,0 +1,19 @@
+@mixin media($from: null, $to: null) {
+    @if not $from and not $to {
+        @error 'Invalid usage of media mixin: @include media { ... }. Provide $from, $to or both $from and $to arguments. Example: @include media($from: 400px, $to: 650px) { ... }.'
+    }
+
+    @if not $from {
+        @media all and (max-width: $to) {
+            @content;
+        }
+    } @else if not $to {
+        @media all and (min-width: $from) {
+            @content;
+        }
+    } @else {
+        @media all and (min-width: $from) and (max-width: $to) {
+            @content;
+        }
+    }
+}

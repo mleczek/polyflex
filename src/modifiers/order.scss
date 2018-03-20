@@ -1,0 +1,13 @@
+.#{$prefix}item {
+    order: round($ordersCount / 2);
+}
+
+@each $name in join((''), map-keys($breakpoints)) {
+    @include gte($name) {
+        @for $order from 1 through $ordersCount {
+            .#{$prefix}item.#{$name}-order-#{$order} {
+                order: $order;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@each $name in join((''), map-keys($breakpoints)) {
+    @include gte($name) {
+        .#{$prefix}row.#{$name}-x-stretch,
+        .#{$prefix}rows.#{$name}-x-stretch {
+            justify-content: stretch;
+        }
+
+        .#{$prefix}col.#{$name}-x-stretch,
+        .#{$prefix}cols.#{$name}-x-stretch {
+            align-content: stretch;
+        }
+
+        .#{$prefix}col > .#{$prefix}item.#{$name}-x-stretch,
+        .#{$prefix}cols > .#{$prefix}item.#{$name}-x-stretch {
+            align-self: stretch;
+        }
+    }
+}

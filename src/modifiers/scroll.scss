@@ -1,0 +1,11 @@
+.#{$prefix}row.-scroll {
+    overflow-x: auto;
+}
+
+.#{$prefix}col.-scroll {
+    overflow-y: auto;
+}
+
+.#{$prefix}item.-scroll {
+    overflow: auto;
+}

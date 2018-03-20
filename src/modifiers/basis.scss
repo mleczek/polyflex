@@ -1,0 +1,12 @@
+$_keys: map-keys($breakpoints);
+@each $name, $value in $breakpoints {
+    @include gte($name) {
+        @for $base from 1 through $basis {
+            .#{$prefix}item.#{$name}-#{$base} {
+                flex-basis: (100% * $base / $basis);
+                flex-grow: 0 !important;
+                flex-shrink: 0 !important;
+            }
+        }
+    }
+}

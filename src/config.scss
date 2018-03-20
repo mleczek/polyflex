@@ -1,0 +1,40 @@
+// Prefix added before class name
+// (use to avoid namespace conflicts).
+//$prefix: 'pf-';
+$prefix: '';
+
+// Some modifiers apply to the specified viewports,
+// below you can override used breakpoints.
+//
+// By default xs modifier applies all viewports,
+// sm starts from 400px, md from 600px, and so on...
+//
+// It's designed in mobile-first approach. It means
+// that xs-* applies to all viewports up to the next
+// greater viewport.
+//
+// Example:     <div class="xs-red md-green lg-blue">
+// Is equal to: <div class="xs-red sm-red md-green lg-blue xl-blue">
+//                                 ^^^^^^                  ^^^^^^^
+//                                 |                       |
+//                                 | inherits from xs      | inherits from lg
+//
+// ATTENTION: Define breakpoints in ascending order!
+$breakpoints: (
+    xs: 0px,
+    sm: 500px,
+    md: 800px,
+    lg: 1100px,
+    xl: 1400px
+);
+
+// Number of columns in row or rows in column,
+// it's used to set size equal N units of $basis.
+//
+// Example: xs-6 for $basis: 12 is equal 50%;
+//          xs-10 for $basis: 16 is equal 100% * 10 / 16;
+$basis: 12;
+
+// Number of possible item's order
+// (by default half of this value).
+$ordersCount: 50;

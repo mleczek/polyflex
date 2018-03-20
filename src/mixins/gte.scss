@@ -1,0 +1,17 @@
+@mixin gte($breakpoint) {
+    $_keys: map-keys($breakpoints);
+    @if not map-has-key($breakpoints, $breakpoint) and $breakpoint != '' {
+        @error 'Invalid usage of gte mixin: @mixin gte(#{$breakpoint}) { ... }. Provided #{$breakpoint} breakpoint not found, use one of: #{$_keys}.'
+    }
+
+    $_index: index($_keys, $breakpoint);
+    $_values: map-values($breakpoints);
+
+    @if $_index != null and $_index - 1 > 0 {
+        @include media($from: nth($_values, $_index)) {
+            @content;
+        }
+    } @else {
+        @content
+    }
+}

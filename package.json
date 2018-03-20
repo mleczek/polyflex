@@ -1,0 +1,27 @@
+{
+    "name": "polyflex",
+    "version": "0.1.0",
+    "description": "Yet another flexbox layout",
+    "homepage": "https://github.com/mleczek/polyflex",
+    "keywords": [
+        "flexbox",
+        "layout",
+        "css"
+    ],
+    "author": "Wojciech Mleczek",
+    "license": "MIT",
+    "scripts": {
+        "prod": "gulp",
+        "dev": "gulp watch --local"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.23.6",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.9.3",
+        "gulp-connect-php": "^1.0.3",
+        "gulp-sass": "^3.1.0",
+        "node-sass": "^4.7.2",
+        "run-sequence": "^2.2.1"
+    }
+}

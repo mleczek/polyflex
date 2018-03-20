@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Polyflex</title>
+
+    <link rel="stylesheet" href="assets/external/polyflex.css">
+    <link rel="stylesheet" href="assets/custom.css">
+</head>
+<body>
+    <h1>Installation:</h1>
+    <div class="error">Instalacja za pomocą npm lub git submodule</div>
+
+    <h1>Configuration:</h1>
+    <div class="error">Opisać zmienne w pliku config.scss</div>
+
+
+    <h1>Components and Modifiers:</h1>
+    <h2>What is a component?</h2>
+    <div class="error">...</div>
+
+    <h2>What is a modifier?</h2>
+    <div class="error">...</div>
+
+    <h2>Which modifiers can be used by components?</h2>
+    <div class="scroll-x">
+        <table>
+            <tr>
+                <th></th>
+                <th>basis</th>
+                <th>scroll</th>
+                <th>grow-*</th>
+                <th>no-grow</th>
+                <th>shrink-*</th>
+                <th>no-shrink</th>
+                <th>cols-*</th>
+                <th>rows-*</th>
+                <th>x-*</th>
+                <th>y-*</th>
+                <th>order-*</th>
+            </tr>
+            <tr>
+                <th>row</th>
+                <td></td>
+                <td>✅</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>rows</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>col</th>
+                <td></td>
+                <td>✅</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✅</td>
+                <td></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>cols</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✅</td>
+                <td></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>item</th>
+                <td>✅</td>
+                <td>✅</td>
+                <td title="Only if basis modifier isn't specified">⚠</td>
+                <td title="Only if basis modifier isn't specified">⚠</td>
+                <td title="Only if basis modifier isn't specified">⚠</td>
+                <td title="Only if basis modifier isn't specified">⚠</td>
+                <td></td>
+                <td></td>
+                <td title="Only inside .col and .cols components">⚠</td>
+                <td title="Only inside .row and .rows components">⚠</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <th>break</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <p>Place mouse over yellow alerts to see more details.</p>
+
+    <h2>Which modifiers are supporting prefixes?</h2>
+    <div class="scroll-x">
+        <table>
+            <tr>
+                <th></th>
+                <th>basis</th>
+                <th>scroll</th>
+                <th>grow-*</th>
+                <th>shrink-*</th>
+                <th>cols-*</th>
+                <th>rows-*</th>
+                <th>x-*</th>
+                <th>y-*</th>
+                <th>order-*</th>
+            </tr>
+            <tr>
+                <th>Supports</th>
+                <td>✅</td>
+                <td></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <th>Default <code>xs-*</code></th>
+                <td></td>
+                <td></td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <h1>Quick Introduce</h1>
+    <div class="error">...</div>
+
+
+    <h1>Row Component</h1>
+    <div class="error">...</div>
+
+    <h2>Scroll Modifier</h2>
+    <table>
+        <tr>
+            <th>Default</th>
+            <td class="no-padding">
+                <div class="row" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3" style="background: cornflowerblue;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-scroll</code></th>
+            <td class="no-padding">
+                <div class="row -scroll" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3" style="background: cornflowerblue;"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Rows Modifier</h2>
+    <table>
+        <tr>
+            <th>Default</th>
+            <th><code>-rows-top</code></th>
+            <th><code>-rows-middle</code></th>
+            <th><code>-rows-bottom</code></th>
+            <th><code>-rows-stretch</code></th>
+        </tr>
+        <tr>
+            <td class="no-padding">
+                <div class="row" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="row -rows-top" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="row -rows-middle" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="row -rows-bottom" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="row -rows-stretch" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>X Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Y Modifier</h2>
+    <div class="error">...</div>
+
+
+    <h1>Rows Component</h1>
+    <div class="error">...</div>
+
+    <h2>Rows Modifier</h2>
+    <table>
+        <tr>
+            <th>Default</th>
+            <th><code>-rows-top</code></th>
+            <th><code>-rows-middle</code></th>
+            <th><code>-rows-bottom</code></th>
+            <th><code>-rows-stretch</code></th>
+        </tr>
+        <tr>
+            <td class="no-padding">
+                <div class="rows" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 5px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="rows -rows-top" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 5px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="rows -rows-middle" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 5px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="rows -rows-bottom" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 5px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                </div>
+            </td>
+            <td class="no-padding">
+                <div class="rows -rows-stretch" style="width: 60px; margin: 0 auto;">
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 30px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 5px"></div>
+                    <div class="item xs-2" style="min-height: 15px"></div>
+                    <div class="item xs-2" style="min-height: 40px"></div>
+                    <div class="item xs-2" style="min-height: 25px"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>X Modifier</h2>
+    <table>
+        <tr>
+            <th>Default</th>
+            <td class="no-padding">
+                <div class="rows" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-left</code></th>
+            <td class="no-padding">
+                <div class="rows -x-left" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-center</code></th>
+            <td class="no-padding">
+                <div class="rows -x-center" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-right</code></th>
+            <td class="no-padding">
+                <div class="rows -x-right" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-stretch</code></th>
+            <td class="no-padding">
+                <div class="rows -x-stretch" style="width: 200px">
+                    <div class="item" style="min-width: 20%"></div>
+                    <div class="item" style="min-width: 30%"></div>
+                    <div class="item" style="min-width: 20%"></div>
+                    <div class="item" style="min-width: 80%"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-space-evenly</code></th>
+            <td class="no-padding">
+                <div class="rows -x-space-evenly" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-space-around</code></th>
+            <td class="no-padding">
+                <div class="rows -x-space-around" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-x-space-between</code></th>
+            <td class="no-padding">
+                <div class="rows -x-space-between" style="width: 200px">
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-3"></div>
+                    <div class="item xs-8"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Y Modifier</h2>
+    <table>
+        <tr>
+            <th>Default</th>
+            <td class="no-padding">
+                <div class="rows" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-top</code></th>
+            <td class="no-padding">
+                <div class="rows -y-top" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-middle</code></th>
+            <td class="no-padding">
+                <div class="rows -y-middle" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-bottom</code></th>
+            <td class="no-padding">
+                <div class="rows -y-bottom" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-stretch</code></th>
+            <td class="no-padding">
+                <div class="rows -y-stretch" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-space-evenly</code></th>
+            <td class="no-padding">
+                <div class="rows -y-space-evenly" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-space-around</code></th>
+            <td class="no-padding">
+                <div class="rows -y-space-around" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th><code>-y-space-between</code></th>
+            <td class="no-padding">
+                <div class="rows -y-space-between" style="height: 40px; width: 200px;">
+                    <div class="item xs-4"></div>
+                    <div class="item xs-1"></div>
+                    <div class="item xs-2"></div>
+                    <div class="item xs-12"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <h1>Col Component</h1>
+    <div class="error">...</div>
+
+    <h2>Scroll Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Cols Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Y Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>X Modifier</h2>
+    <div class="error">...</div>
+
+
+    <h1>Cols Component</h1>
+    <div class="error">...</div>
+
+    <h2>Cols Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Y Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>X Modifier</h2>
+    <div class="error">...</div>
+
+
+    <h1>Item Component</h1>
+    <div class="error">...</div>
+
+    <h2>Basis Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Scroll Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Grow Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>No-Grow Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Shrink Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>No-Shrink Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>X Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Y Modifier</h2>
+    <div class="error">...</div>
+
+    <h2>Order Modifier</h2>
+    <div class="error">...</div>
+
+
+    <h1>Break Component</h1>
+    <div class="error">...</div>
+
+
+    <h1>Sample Layouts</h1>
+    <div class="error">...</div>
+</body>
+</html>

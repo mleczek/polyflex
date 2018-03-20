@@ -1,0 +1,8 @@
+.#{$prefix}cols {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    box-sizing: border-box;
+    overflow: hidden;
+}
