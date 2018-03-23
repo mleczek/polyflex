@@ -14,7 +14,7 @@ gulp.task('styles', function () {
     return gulp.src('polyflex.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(clean({ compatibility: 'ie9' }))
-        .pipe(gulp.dest('docs/assets/external'))
+        .pipe(gulp.dest('docs/assets'))
         .pipe(gulp.dest('dist'));
 });
 
