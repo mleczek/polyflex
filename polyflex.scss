@@ -2,12 +2,14 @@
 
 @import 'src/mixins/media';
 @import 'src/mixins/gte';
+@import 'src/mixins/eq';
 
 @import 'src/components/row';
 @import 'src/components/rows';
 @import 'src/components/col';
 @import 'src/components/cols';
 @import 'src/components/item';
+@import 'src/components/break';
 
 // Modifiers as the name says modify the default
 // behaviour so they must be defined after the components.

@@ -1,7 +1,7 @@
 {
     "name": "polyflex",
     "version": "0.1.0",
-    "description": "Yet another flexbox layout",
+    "description": "Modern CSS Flexbox",
     "homepage": "https://github.com/mleczek/polyflex",
     "keywords": [
         "flexbox",

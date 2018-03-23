@@ -90,55 +90,7 @@ table th {
     color: white;
 }
 
-/*
-.overflow {
-    max-width: 100%;
-    overflow: auto;
-    background: #e7e7e7;
-    border-radius: 3px;
-    padding: 15px 20px;
-    margin-top: 10px;
-    box-shadow: 0 2px 2px -1px rgba(0,0,0,0.4);
-}
-
-code {
-    overflow: visible;
-    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
-    word-wrap: normal;
-    white-space: pre;
-    font-size: 13px;
-}
-
-.overflow code {
-    font-size: 12px;
-}
-
 ul {
     margin-top: 10px;
     margin-left: 30px;
 }
-
-.row, .rows,
-.col, .cols {
-    background: #E0F2F1;
-    box-shadow: 0 2px 2px -1px rgba(0,105,92,0.4);
-    border-radius: 6px;
-    margin-top: 10px;
-    padding: 2px;
-}
-
-.item {
-    padding: 10px;
-    border-radius: 6px;
-    border: 2px solid #E0F2F1;
-    background: #4DB6AC;
-    color: white;
-}
-
-.item:nth-of-type(6n+1) { background: #4DB6AC; }
-.item:nth-of-type(6n+2) { background: #26A69A; }
-.item:nth-of-type(6n+3) { background: #009688; }
-.item:nth-of-type(6n+4) { background: #00897B; }
-.item:nth-of-type(6n+5) { background: #00796B; }
-.item:nth-of-type(6n+6) { background: #00695C; }
-*/

@@ -1,0 +1,22 @@
+.#{$prefix}break {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+}
+
+@each $name in map-keys($breakpoints) {
+    .#{$prefix}break.#{$name} {
+        display: none;
+    }
+}
+
+@each $name in map-keys($breakpoints) {
+    @include eq($name) {
+        .#{$prefix}break.#{$name} {
+            display: block !important;
+        }
+    }
+}

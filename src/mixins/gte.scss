@@ -1,7 +1,7 @@
 @mixin gte($breakpoint) {
     $_keys: map-keys($breakpoints);
     @if not map-has-key($breakpoints, $breakpoint) and $breakpoint != '' {
-        @error 'Invalid usage of gte mixin: @mixin gte(#{$breakpoint}) { ... }. Provided #{$breakpoint} breakpoint not found, use one of: #{$_keys}.'
+        @error 'Invalid usage of gte mixin: @mixin gte(#{$breakpoint}) { ... }. Provided #{$breakpoint} breakpoint not found, leave empty or use one of: #{$_keys}.'
     }
 
     $_index: index($_keys, $breakpoint);
