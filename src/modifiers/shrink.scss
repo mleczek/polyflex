@@ -1,9 +1,5 @@
 @each $name in join((''), map-keys($breakpoints)) {
     @include gte($name) {
-        .#{$prefix}item.#{$name}-no-shrink {
-            flex-shrink: 0;
-        }
-
         @for $base from 1 through $basis {
             .#{$prefix}item.#{$name}-shrink-x#{$base} {
                 flex-shrink: $base;

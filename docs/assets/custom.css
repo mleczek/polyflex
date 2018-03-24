@@ -82,6 +82,11 @@ table th {
     color: white;
 }
 
+.row, .rows, .col, .cols {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .item {
     padding: 3px;
     border-radius: 4px;

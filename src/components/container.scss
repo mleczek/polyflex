@@ -1,0 +1,7 @@
+.#{$prefix}container {
+    max-width: $container;
+    padding-left: $padding;
+    padding-right: $padding;
+    margin-left: auto;
+    margin-right: auto;
+}

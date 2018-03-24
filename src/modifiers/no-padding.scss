@@ -1,0 +1,27 @@
+@if $padding % 2 != 0 {
+    @warn "It is recommended to set padding variable to multiple of 2."
+}
+
+.#{$prefix}row,
+.#{$prefix}rows,
+.#{$prefix}col,
+.#{$prefix}cols {
+    margin-left: (-$padding / 2);
+    margin-right: (-$padding / 2);
+}
+
+.#{$prefix}item {
+    padding: ($padding / 2);
+}
+
+.#{$prefix}row.-no-padding,
+.#{$prefix}rows.-no-padding,
+.#{$prefix}col.-no-padding,
+.#{$prefix}cols.-no-padding {
+    margin-left: 0;
+    margin-right: 0;
+
+    > .#{$prefix}item {
+        padding: 0;
+    }
+}

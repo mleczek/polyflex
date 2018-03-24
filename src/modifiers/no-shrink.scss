@@ -1,0 +1,7 @@
+@each $name in join((''), map-keys($breakpoints)) {
+    @include gte($name) {
+        .#{$prefix}item.#{$name}-no-shrink {
+            flex-shrink: 0;
+        }
+    }
+}

@@ -10,14 +10,18 @@
 @import 'src/components/cols';
 @import 'src/components/item';
 @import 'src/components/break';
+@import 'src/components/container';
 
 // Modifiers as the name says modify the default
 // behaviour so they must be defined after the components.
 @import 'src/modifiers/scroll';
 @import 'src/modifiers/basis';
+@import 'src/modifiers/no-padding';
 @import 'src/modifiers/order';
 @import 'src/modifiers/grow';
+@import 'src/modifiers/no-grow';
 @import 'src/modifiers/shrink';
+@import 'src/modifiers/no-shrink';
 @import 'src/modifiers/cols-center';
 @import 'src/modifiers/cols-left';
 @import 'src/modifiers/cols-right';

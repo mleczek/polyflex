@@ -7,6 +7,16 @@ $_keys: map-keys($breakpoints);
                 flex-grow: 0 !important;
                 flex-shrink: 0 !important;
             }
+
+            .#{$prefix}row > .#{$prefix}item.#{$name}-#{$base},
+            .#{$prefix}rows > .#{$prefix}item.#{$name}-#{$base} {
+                max-width: (100% * $base / $basis);
+            }
+
+            .#{$prefix}col > .#{$prefix}item.#{$name}-#{$base},
+            .#{$prefix}cols > .#{$prefix}item.#{$name}-#{$base} {
+                max-height: (100% * $base / $basis);
+            }
         }
     }
 }

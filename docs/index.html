@@ -28,6 +28,7 @@
         <li><strong>cols</strong> - multiple columns of items (flexbox),</li>
         <li><strong>item</strong> - single item in row or column,</li>
         <li><strong>break</strong> - go to the next row or column.</li>
+        <li><strong>container</strong> - limit the page width.</li>
     </ul>
 
     <h2>What is a modifier?</h2>
@@ -35,6 +36,7 @@
     <p>In polyflex there're following modifiers:</p>
     <ul>
         <li><b>basis</b> - controls the width of items,</li>
+        <li><b>no-padding</b> - remove inner padding in items,</li>
         <li><b>scroll</b> - adds a scrollbar for overflowing items,</li>
         <li><b>grow-*</b> - defines the ability for an item to grow if necessary,</li>
         <li><b>no-grow</b> - block items ability to grow,</li>
@@ -53,6 +55,7 @@
             <tr>
                 <th></th>
                 <th>basis</th>
+                <th>no-padding</th>
                 <th>scroll</th>
                 <th>grow-*</th>
                 <th>no-grow</th>
@@ -68,6 +71,7 @@
                 <th>row</th>
                 <td></td>
                 <td>✅</td>
+                <td>✅</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -81,6 +85,7 @@
             <tr>
                 <th>rows</th>
                 <td></td>
+                <td>✅</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -96,6 +101,7 @@
                 <th>col</th>
                 <td></td>
                 <td>✅</td>
+                <td>✅</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -109,6 +115,7 @@
             <tr>
                 <th>cols</th>
                 <td></td>
+                <td>✅</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -123,6 +130,7 @@
             <tr>
                 <th>item</th>
                 <td>✅</td>
+                <td></td>
                 <td>✅</td>
                 <td title="Only if basis modifier isn't specified">⚠</td>
                 <td title="Only if basis modifier isn't specified">⚠</td>
@@ -146,7 +154,23 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
                 <td>✅</td>
+            </tr>
+            <tr>
+                <th>container</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </div>
