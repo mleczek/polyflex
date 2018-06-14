@@ -7,7 +7,7 @@
 
         .#{$prefix}row.#{$name}-y-bottom,
         .#{$prefix}rows.#{$name}-y-bottom {
-            align-content: flex-end;
+            align-items: flex-end;
         }
 
         .#{$prefix}row > .#{$prefix}item.#{$name}-y-bottom,

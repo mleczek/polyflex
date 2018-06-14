@@ -4,10 +4,5 @@
         .#{$prefix}cols.#{$name}-y-space-around {
             justify-content: space-around;
         }
-
-        .#{$prefix}row.#{$name}-y-space-around,
-        .#{$prefix}rows.#{$name}-y-space-around {
-            align-content: space-around;
-        }
     }
 }

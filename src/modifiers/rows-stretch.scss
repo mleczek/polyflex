@@ -2,7 +2,7 @@
     @include gte($name) {
         .#{$prefix}row.#{$name}-rows-stretch,
         .#{$prefix}rows.#{$name}-rows-stretch {
-            align-items: stretch;
+            align-content: stretch;
         }
     }
 }

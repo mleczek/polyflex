@@ -7,7 +7,7 @@
 
         .#{$prefix}row.#{$name}-y-middle,
         .#{$prefix}rows.#{$name}-y-middle {
-            align-content: center;
+            align-items: center;
         }
 
         .#{$prefix}row > .#{$prefix}item.#{$name}-y-middle,

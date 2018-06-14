@@ -7,7 +7,7 @@
 
         .#{$prefix}row.#{$name}-y-stretch,
         .#{$prefix}rows.#{$name}-y-stretch {
-            align-content: stretch;
+            align-items: stretch;
         }
 
         .#{$prefix}row > .#{$prefix}item.#{$name}-y-stretch,

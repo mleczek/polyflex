@@ -2,7 +2,7 @@
     @include gte($name) {
         .#{$prefix}row.#{$name}-rows-bottom,
         .#{$prefix}rows.#{$name}-rows-bottom {
-            align-items: flex-end;
+            align-content: flex-end;
         }
     }
 }

@@ -7,7 +7,7 @@
 
         .#{$prefix}col.#{$name}-x-center,
         .#{$prefix}cols.#{$name}-x-center {
-            align-content: center;
+            align-items: center;
         }
 
         .#{$prefix}col > .#{$prefix}item.#{$name}-x-center,

@@ -2,7 +2,7 @@
     @include gte($name) {
         .#{$prefix}col.#{$name}-cols-right,
         .#{$prefix}cols.#{$name}-cols-right {
-            align-items: flex-end;
+            align-content: flex-end;
         }
     }
 }

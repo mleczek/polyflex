@@ -2,7 +2,7 @@
     @include gte($name) {
         .#{$prefix}row.#{$name}-rows-middle,
         .#{$prefix}rows.#{$name}-rows-middle {
-            align-items: center;
+            align-content: center;
         }
     }
 }

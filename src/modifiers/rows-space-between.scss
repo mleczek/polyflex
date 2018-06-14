@@ -1,0 +1,8 @@
+@each $name in join((''), map-keys($breakpoints)) {
+    @include gte($name) {
+        .#{$prefix}row.#{$name}-rows-space-between,
+        .#{$prefix}rows.#{$name}-rows-space-between {
+            align-content: space-between;
+        }
+    }
+}

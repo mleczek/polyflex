@@ -7,7 +7,7 @@
 
         .#{$prefix}col.#{$name}-x-left,
         .#{$prefix}cols.#{$name}-x-left {
-            align-content: flex-start;
+            align-items: flex-start;
         }
 
         .#{$prefix}col > .#{$prefix}item.#{$name}-x-left,

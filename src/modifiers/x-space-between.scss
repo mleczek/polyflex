@@ -4,10 +4,5 @@
         .#{$prefix}rows.#{$name}-x-space-between {
             justify-content: space-between;
         }
-
-        .#{$prefix}col.#{$name}-x-space-between,
-        .#{$prefix}cols.#{$name}-x-space-between {
-            align-content: space-between;
-        }
     }
 }
