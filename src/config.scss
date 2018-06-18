@@ -1,7 +1,7 @@
 // Prefix added before class name
 // (use to avoid namespace conflicts).
-//$prefix: 'pf-';
-$prefix: '';
+//$prefix: 'pf-' !default;
+$prefix: '' !default;
 
 // Some modifiers apply to the specified viewports,
 // below you can override used breakpoints.
@@ -26,21 +26,21 @@ $breakpoints: (
     md: 800px,
     lg: 1100px,
     xl: 1400px
-);
+) !default;
 
 // Number of columns in row or rows in column,
 // it's used to set size equal N units of $basis.
 //
 // Example: xs-6 for $basis: 12 is equal 50%;
 //          xs-10 for $basis: 16 is equal 100% * 10 / 16;
-$basis: 12;
+$basis: 12 !default;
 
 // Number of possible item's order
 // (by default half of this value).
-$ordersCount: 50;
+$ordersCount: 50 !default;
 
 // TODO:
-$container: 600px;
+$container: 600px !default;
 
 // TODO:
-$padding: 30px;
+$padding: 30px !default;
